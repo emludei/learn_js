@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Price list!</title>
+
+    <link rel="stylesheet" type="text/css" href="css/price_list_style.css">
+    <script type="text/javascript" src="js/price_list_utils.js" defer></script>
+    <script type="text/javascript" src="js/set_event_listeners.js", defer></script>
+    <script type="text/javascript" src="js/goods-db.js" defer></script>
+    <script type="text/javascript" src="js/init_db.js" defer></script>
+    <script type="text/javascript" src="js/load_goods.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="container">
+                <div class="header-title">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+            </div><!-- close: .header > .container -->
+        </header><!-- close: .header -->
+
+        <div class="middle">
+            <div class="container">
+
+                <div class="price-list-controls">
+                    <div class="search">
+                        <form id="js-search-form" action="" method="get">
+                            <input type="text" name="query" class="search-box" placeholder="Search">
+                            <button type="submit" class="btn btn-blue">Search</button>
+                        </form>
+                    </div><!-- close: .search -->
+                    <div class="controls-right-btn-group">
+                        <a id="js-add-new-good" class="btn btn-green" href="#">Add new good</a>
+                    </div><!-- close: .controls-right-btn-group -->
+                </div><!-- close: .price-list-controls -->
+
+                <div id="js-goods-editor" class="goods-editor" hidden="true">
+                    <input type="hidden" name="id">
+                    <div class="edit-item edit-goods-name">
+                        <label for="name">Name</label>
+                        <input type="text" name="name">
+                    </div><!-- close: .edit-goods-name -->
+                    <div class="edit-item edit-goods-count">
+                        <label for="count">Count</label>
+                        <input type="text" name="count">
+                    </div><!-- close: .edit-goods-count -->
+                    <div class="edit-item edit-goods-price">
+                        <label for="price">Price</label>
+                        <input type="text" name="price">
+                    </div><!-- close: .edit-goods-price -->
+                    <div class="edit-item edit-goods-submit">
+                        <button id="js-goods-editor-submit" class="btn btn-blue">Add / Update</button>
+                    </div><!-- close: .edit-goods-submit -->
+                </div><!-- close: .goods-editor -->
+
+                <div id="js-price-list-is-empty" class="price-list-is-empty" hidden="true">
+                    <p>There are no goods =(</p>
+                </div>
+
+                <table id="js-price-list" class="price-list">
+                    <tr class="price-list-title">
+                        <td>ID</td>
+                        <td>Goods</td>
+                        <td>Count</td>
+                        <td>Price</td>
+                        <td>Action</td>
+                    </tr>
+                </table><!-- close: table.price-list -->
+
+            </div><!-- close: .middle > .container -->
+        </div><!-- close: .middle -->
+    </div><!-- close: .main -->
+
+    <footer class="footer">
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex illum ipsum ducimus in eveniet illo saepe, labore earum, commodi, totam quis, eum quibusdam dolore a. Magni, consequuntur dignissimos optio praesentium.</p>
+        </div><!-- close: .footer > .contaier -->
+    </footer><!-- close: .footer -->
+</body>
+</html>
