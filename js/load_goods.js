@@ -25,25 +25,31 @@
     };
 
     PriceList.createEditGoodLink = function() {
-        var a = document.createElement('a');
+        var link = document.createElement('a');
 
-        a.href = '#';
-        a.id = 'js-good-edit';
-        a.className = 'btn btn-blue'
-        a.innerHTML = 'Edit';
+        link.setAttribute('id', 'js-good-edit');
+        link.setAttribute('href', '#');
 
-        return a;
+        link.classList.add('btn');
+        link.classList.add('btn-blue');
+
+        link.innerHTML = 'Edit';
+
+        return link;
     };
 
     PriceList.createRemoveGoodLink = function() {
-        var a = document.createElement('a');
+        var link = document.createElement('a');
 
-        a.href = '#';
-        a.id = 'js-good-remove';
-        a.innerHTML = 'Remove';
-        a.className = 'btn btn-red';
+        link.setAttribute('id', 'js-good-remove');
+        link.setAttribute('href', '#');
 
-        return a;
+        link.classList.add('btn');
+        link.classList.add('btn-red');
+
+        link.innerHTML = 'Remove';
+
+        return link;
     };
 
     PriceList.editGood = function(id, name, count, price) {
